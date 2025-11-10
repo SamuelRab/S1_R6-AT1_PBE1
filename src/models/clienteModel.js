@@ -8,7 +8,7 @@ const clienteModel = {
   },
 
   selecionarPorId: async (pId) => {
-    const sql = "SELECT * FROM clientes WHERE id = ?;";
+    const sql = "SELECT * FROM clientes WHERE id =?;";
     const values = [pId];
     const [rows] = await pool.query(sql, values);
     return rows;

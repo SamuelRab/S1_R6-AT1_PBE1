@@ -20,7 +20,7 @@ const clienteController = {
   },
   buscarclientePorID: async (req, res) => {
     try {
-      const id = Number(req.params.id);
+      const id = Number(req.query.id);
       if (!id || !Number.isInteger(id)) {
         return res
           .status(400)

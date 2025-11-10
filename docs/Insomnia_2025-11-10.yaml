@@ -129,16 +129,22 @@ collection:
       sortKey: -1761591701992
       description: ""
     children:
-      - url: localhost:8081/clientes/1
+      - url: localhost:8081/clientes/id
         name: New Request
         meta:
           id: req_66b13c16c197468a909a0f049aefef96
           created: 1761591707600
-          modified: 1762167347260
+          modified: 1762772529793
           isPrivate: false
           description: ""
           sortKey: -1762167333815
         method: GET
+        parameters:
+          - id: pair_cf593d11135c434987cdc296dd247d9b
+            name: id
+            value: "3"
+            description: ""
+            disabled: false
         headers:
           - name: User-Agent
             value: insomnia/11.6.1
@@ -176,7 +182,7 @@ collection:
         meta:
           id: req_7b0f57cd40f74385b76ee7f14ba658dd
           created: 1761591711697
-          modified: 1762195362543
+          modified: 1762772108437
           isPrivate: false
           description: ""
           sortKey: -1762167333715
@@ -185,8 +191,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"nome" : "Ana",
-            	"cpf": 53792069670
+            	"nome" : "Alessandro",
+            	"cpf": "53792010475"
             }
         headers:
           - name: Content-Type
@@ -206,7 +212,7 @@ collection:
         meta:
           id: req_5c062c04fea04a5c86e95f03b4803894
           created: 1762195370959
-          modified: 1762454357314
+          modified: 1762772179956
           isPrivate: false
           description: ""
           sortKey: -1762167334015
@@ -215,8 +221,8 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"nome" : "Carlos",
-            	"cpf": "92139129379"
+            	"nome" : "Xavier",
+            	"cpf": "92139110397"
             }
         headers:
           - name: Content-Type
@@ -231,12 +237,12 @@ collection:
             send: true
             store: true
           rebuildPath: true
-      - url: localhost:8081/clientes/2
+      - url: localhost:8081/clientes/4
         name: New Request
         meta:
           id: req_1378e8bfe61540058891c28494e8964d
           created: 1762196284054
-          modified: 1762452937105
+          modified: 1762772577793
           isPrivate: false
           description: ""
           sortKey: -1762167334115
